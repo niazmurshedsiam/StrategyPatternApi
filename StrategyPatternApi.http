@@ -1,0 +1,30 @@
+@Api = https://localhost:7115
+@ContentType = application/json
+
+### Process Payment with Credit Card
+POST {{Api}}/process-payment
+Content-Type: {{ContentType}}
+
+{
+  "amount": 100.50,
+  "paymentMethod": "creditcard"
+}
+
+### Process Payment with PayPal
+POST {{Api}}/process-payment
+Content-Type: {{ContentType}}
+
+{
+  "amount": 75.25,
+  "paymentMethod": "paypal"
+}
+
+
+
+### Get Available Payment Methods
+GET {{Api}}/payment-methods
+Accept: {{ContentType}}
+
+### Get Current Payment Method
+GET {{Api}}/current-method
+Accept: {{ContentType}}
