@@ -1,3 +1,4 @@
+## Strategy Pattern Api ##
 Open/Closed Principle: Easy to add new payment methods without modifying existing code
 
 Dependency Injection: Properly configured with .NET Core DI
